@@ -1,0 +1,16 @@
+// DATA TABLE: average PISA mathematics score by daily hours on digital devices.
+// Fill in ONLY numbers you read from OECD tables (PISA 2022 Results, Volume II, chapter 5,
+// Figure II.5.14 and its tables). Never estimate a number by eye without writing it in "note".
+//
+// place:   "school"  (devices used at school)  or  "outside" (devices used outside school)
+// purpose: "learning" or "leisure"
+// hours:   the category label exactly as in the OECD table (e.g. "Up to 1 hour")
+// order:   1, 2, 3 ... from the smallest to the largest category (used to draw the line)
+// score:   average maths score for this category (number), or null if not filled in yet
+// source:  table or figure name + link
+// note:    anything the reader should know (e.g. "after accounting for ESCS")
+window.SCREEN_DATA = [
+  // EXAMPLE ROW (delete or replace with real data):
+  { place: "school", purpose: "leisure", hours: "EXAMPLE category", order: 1, score: null,
+    source: "PISA 2022 Results Vol. II, Fig. II.5.14", note: "replace with real value" }
+];
