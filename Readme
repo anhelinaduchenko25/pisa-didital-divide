@@ -1,0 +1,27 @@
+# Screen time and academic performance
+
+Interactive calculator and charts: how is daily time on digital devices (for learning vs for leisure) related to students' PISA scores?
+
+**Live site:** https://anhelinaduchenko25.github.io/pisa-didital-divide/
+
+## Social problem
+Unregulated use of devices for entertainment can distract students and is linked to lower PISA scores, while purposeful use for learning is linked to higher scores. Students often do not know where the balance is.
+
+## Research question
+How does screen time for entertainment vs learning relate to students' PISA test scores, and where is the balance ("sweet spot")?
+
+## Data
+OECD, PISA 2022 Results (Volume II), chapter 5 (digital devices and mathematics performance). Numbers are copied from published OECD tables into `data.js`, with the source next to every row.
+
+## Limitations
+- The data show associations, not causes.
+- Screen time is reported by students themselves.
+- Values are averages across groups of students, not a forecast for one person.
+- The "sweet spot" is an indicative zone, not a proven optimum.
+
+## Files
+| File | Purpose |
+|---|---|
+| `index.html` | the web page |
+| `data.js` | the data table with sources |
+| `app.js` | calculator and chart logic |
