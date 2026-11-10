@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Screen time and academic performance</title>
 <style>
-:root{--bg:#fafaf7;--text:#1d2327;--muted:#5d6670;--accent:#1f5f8b}
-@media (prefers-color-scheme:dark){:root{--bg:#15181b;--text:#eceff1;--muted:#9aa5ad;--accent:#6cb4e4}}
+:root{--bg:#fafaf7;--card:#fff;--text:#1d2327;--muted:#5d6670;--line:#e2e4e0;--accent:#1f5f8b;--learn:#2a7fb8;--leis:#e07b39}
+@media (prefers-color-scheme:dark){:root{--bg:#15181b;--card:#1e2327;--text:#eceff1;--muted:#9aa5ad;--line:#2f373d;--accent:#6cb4e4;--learn:#5aaee0;--leis:#f0955a}}
+*{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
-main{max-width:760px;margin:0 auto;padding:48px 16px}
-h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:0 0 .4em}
-p{color:var(--muted);font-size:1.05rem}
-.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--accent);color:#fff;font-size:.8rem}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+h1{font-size:clamp(1.5rem,4vw,2.2rem);margin:.2em 0}
+h2{font-size:1.25rem;margin:1.8em 0 .5em}
+.lead{color:var(--muted);max-width:720px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+button{font:inherit;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.val{font-weight:700;font-size:1.2rem}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}
+.msg{margin:.6em 0 0}
+.badge{display:inline-block;font-size:.8rem;padding:2px 9px;border-radius:999px;color:#fff;margin-bottom:6px}
+.ok{background:#2a9d8f}.mid{background:#e9a23b}.warn{background:#d1495b}
+svg{width:100%;height:auto;display:block}
+svg text{fill:var(--muted);font-size:11px}
+.note,small{color:var(--muted);font-size:.86rem}
+.disc{border-left:4px solid var(--accent);padding:8px 12px;margin:14px 0;background:var(--card);border-radius:0 8px 8px 0}
+ul{padding-left:1.2em}
 </style>
 </head>
 <body>
 <main>
-  <span class="tag">Work in progress</span>
-  <h1>How does screen time relate to academic performance?</h1>
-  <p>Interactive calculator and charts based on PISA 2022 data. Coming soon.</p>
+<header>
+  <div>
+    <h1 id="t-title"></h1>
+    <p class="lead" id="t-lead"></p>
+  </div>
+  <button id="lang" aria-label="Language">EN</button>
+</header>
+
+<h2 id="t-calc"></h2>
+<div class="grid">
+  <div class="card" id="in-learn"></div>
+  <div class="card" id="in-leis"></div>
+</div>
+<p class="note" id="t-avg"></p>
+
+<h2 id="t-res"></h2>
+<div class="grid">
+  <div class="card"><div id="res-learn"></div><div id="ch-learn"></div></div>
+  <div class="card"><div id="res-leis"></div><div id="ch-leis"></div></div>
+</div>
+<p class="note" id="t-legend"></p>
+<div class="disc" id="t-disc"></div>
+
+<h2 id="t-about"></h2>
+<div class="card" id="about"></div>
+
+<h2 id="t-lim"></h2>
+<div class="card"><ul id="lim"></ul></div>
+<p class="note" id="t-src"></p>
 </main>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
