@@ -1,16 +1,165 @@
-// DATA TABLE: average PISA mathematics score by daily hours on digital devices.
-// Fill in ONLY numbers you read from OECD tables (PISA 2022 Results, Volume II, chapter 5,
-// Figure II.5.14 and its tables). Never estimate a number by eye without writing it in "note".
+// DATA TABLE: average PISA 2022 mathematics score by daily hours on digital devices AT SCHOOL (OECD average).
+// Source: OECD (2023), PISA 2022 Results (Volume II): Learning During - and From - Disruption,
+//   chapter 5, p. 194, Figure II.5.14; tables II.B1.5.62, II.B1.5.64, II.B1.5.66, II.B1.5.67 (Annex B1, online via StatLink).
+// https://doi.org/10.1787/a97db61c-en
 //
-// place:   "school"  (devices used at school)  or  "outside" (devices used outside school)
-// purpose: "learning" or "leisure"
-// hours:   the category label exactly as in the OECD table (e.g. "Up to 1 hour")
-// order:   1, 2, 3 ... from the smallest to the largest category (used to draw the line)
-// score:   average maths score for this category (number), or null if not filled in yet
-// source:  table or figure name + link
-// note:    anything the reader should know (e.g. "after accounting for ESCS")
+// approx: true  = value read from the chart (+/-1-2 points). Replace with exact numbers from Annex B1 when available.
+// approx: false = number stated in the report text.
+// shareOfStudents: percent of students in this category (only where the text states it), otherwise null.
+// NOT INCLUDED YET: device use OUTSIDE school (this report section covers school only).
 window.SCREEN_DATA = [
-  // EXAMPLE ROW (delete or replace with real data):
-  { place: "school", purpose: "leisure", hours: "EXAMPLE category", order: 1, score: null,
-    source: "PISA 2022 Results Vol. II, Fig. II.5.14", note: "replace with real value" }
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "None",
+  "order": 1,
+  "score": 456,
+  "shareOfStudents": 14,
+  "approx": false,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "exact, stated in the text"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "Up to 1 hour",
+  "order": 2,
+  "score": 481,
+  "shareOfStudents": 31,
+  "approx": false,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "exact: text says 25 points higher than 'None' (+14 after accounting for socio-economic profile)"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "More than 1 hour and up to 2 hours",
+  "order": 3,
+  "score": 476,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "More than 2 hours and up to 3 hours",
+  "order": 4,
+  "score": 479,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "More than 3 hours and up to 5 hours",
+  "order": 5,
+  "score": 477,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "More than 5 hours and up to 7 hours",
+  "order": 6,
+  "score": 465,
+  "shareOfStudents": 7.8,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "approx.: text says 12 points lower than the 3-5 hour group (10 after accounting for socio-economic profile)"
+ },
+ {
+  "place": "school",
+  "purpose": "learning",
+  "hours": "More than 7 hours",
+  "order": 7,
+  "score": 458,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx.); text says 'even lower' than the 5-7 hour group"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "None",
+  "order": 1,
+  "score": 472,
+  "shareOfStudents": 19,
+  "approx": false,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "exact, stated in the text"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "Up to 1 hour",
+  "order": 2,
+  "score": 492,
+  "shareOfStudents": 31,
+  "approx": false,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "exact: text says 20 points higher than 'None' (+10 after accounting for socio-economic profile)"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "More than 1 hour and up to 2 hours",
+  "order": 3,
+  "score": 483,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "More than 2 hours and up to 3 hours",
+  "order": 4,
+  "score": 468,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "More than 3 hours and up to 5 hours",
+  "order": 5,
+  "score": 451,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "More than 5 hours and up to 7 hours",
+  "order": 6,
+  "score": 430,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ },
+ {
+  "place": "school",
+  "purpose": "leisure",
+  "hours": "More than 7 hours",
+  "order": 7,
+  "score": 438,
+  "shareOfStudents": null,
+  "approx": true,
+  "source": "OECD (2023), PISA 2022 Results (Volume II), p. 194, Figure II.5.14 (OECD average, at school)",
+  "note": "read from the figure (approx., +/-1-2)"
+ }
 ];
