@@ -1,27 +1,43 @@
 # Screen time and academic performance
 
-Interactive calculator and charts: how is daily time on digital devices (for learning vs for leisure) related to students' PISA scores?
+An interactive calculator, charts, hypotheses, evidence and a short quiz about how daily time on digital devices (for learning vs for leisure) at school is related to students' PISA 2022 mathematics scores.
 
-**Live site:** https://anhelinaduchenko25.github.io/pisa-didital-divide/
+**Live site:** https://YOUR-NICKNAME.github.io/YOUR-REPOSITORY/  (replace with your own link)
 
 ## Social problem
-Unregulated use of devices for entertainment can distract students and is linked to lower PISA scores, while purposeful use for learning is linked to higher scores. Students often do not know where the balance is.
+Unregulated use of devices for entertainment can distract students and is linked to lower scores, while purposeful use for learning is linked to higher scores. Students often do not know where the balance is.
 
 ## Research question
-How does screen time for entertainment vs learning relate to students' PISA test scores, and where is the balance ("sweet spot")?
+How does screen time for entertainment vs learning relate to students' PISA scores, and where is the zone of the highest average scores?
+
+## What the site contains
+1. **Calculator**: enter hours per day at school (learning and leisure) and compare with OECD average scores. Charts show a highlighted zone (categories within 5 points of the highest average score).
+2. **Mini quiz**: five questions about habits (not a scientific test).
+3. **Hypotheses vs data**, **theoretical framework** (cognitive load theory, second-level digital divide, Goldilocks hypothesis).
+4. **Digital hygiene rules** and **solutions with evidence** (phone limits in lessons, digital learning platforms, use outside school).
+5. Ukrainian and English interface (button in the top corner).
 
 ## Data
-OECD, PISA 2022 Results (Volume II), chapter 5 (digital devices and mathematics performance). Numbers are copied from published OECD tables into `data.js`, with the source next to every row.
+OECD (2023), *PISA 2022 Results (Volume II)*, chapter 5, Figure II.5.14 (OECD average, time on digital devices at school). Exact values are used where the report text states them; the rest are read from the chart (marked `approx: true` in `data.js`, hollow circles on the charts).
 
 ## Limitations
 - The data show associations, not causes.
-- Screen time is reported by students themselves.
-- Values are averages across groups of students, not a forecast for one person.
-- The "sweet spot" is an indicative zone, not a proven optimum.
+- Only use of devices **at school** is covered; use at home and outside school is not in this dataset.
+- Screen time is self-reported by students.
+- Values are group averages across OECD countries, not a forecast for one person.
+- The highlighted zone is indicative (tolerance of 5 points, `TOL` in `app.js`), not a proven optimum.
+- Evidence on school phone bans is mixed; see the solutions section.
 
 ## Files
 | File | Purpose |
 |---|---|
 | `index.html` | the web page |
+| `app.js` | calculator, charts, quiz and texts (Ukrainian and English) |
 | `data.js` | the data table with sources |
-| `app.js` | calculator and chart logic |
+| `README.md` | this description |
+
+## Run locally
+Open `index.html` in a browser. No installation is needed.
+
+## Publish
+Settings → Pages → Deploy from a branch → `main` / `(root)`.
