@@ -30,6 +30,10 @@ svg text{fill:var(--muted);font-size:11px}
 .note,small{color:var(--muted);font-size:.86rem}
 .disc{border-left:4px solid var(--accent);padding:8px 12px;margin:14px 0;background:var(--card);border-radius:0 8px 8px 0}
 ul{padding-left:1.2em}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:.95rem}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl th{color:var(--muted);font-weight:600}
 </style>
 </head>
 <body>
@@ -50,12 +54,22 @@ ul{padding-left:1.2em}
 <p class="note" id="t-avg"></p>
 
 <h2 id="t-res"></h2>
+<div class="card" id="combo" style="margin-bottom:14px"></div>
 <div class="grid">
   <div class="card"><div id="res-learn"></div><div id="ch-learn"></div></div>
   <div class="card"><div id="res-leis"></div><div id="ch-leis"></div></div>
 </div>
 <p class="note" id="t-legend"></p>
 <div class="disc" id="t-disc"></div>
+
+<h2 id="t-hyp"></h2>
+<div class="card" id="hyp"></div>
+
+<h2 id="t-theory"></h2>
+<div class="grid3" id="theory"></div>
+
+<h2 id="t-rules"></h2>
+<div class="grid3" id="rules"></div>
 
 <h2 id="t-about"></h2>
 <div class="card" id="about"></div>
