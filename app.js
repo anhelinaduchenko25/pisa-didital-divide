@@ -12,6 +12,20 @@ about:"Дані: OECD (2023), PISA 2022 Results (Volume II), розділ 5, р�
 aboutT:"Про дані",limT:"Обмеження",
 lim:["Це кореляція, а не причина: ми не знаємо, чи гаджети впливають на бали, чи навпаки, чи є спільні чинники.","Дані лише про використання в школі. Користування вдома тут не показано.","Самозвіт: учні самі оцінювали свій час.","Середнє по країнах OECD не відображає кожну країну чи кожного учня.","Зона балансу орієнтовна, її межі залежать від обраного допуску (5 пунктів)."],
 src:"Джерело: https://doi.org/10.1787/a97db61c-en",
+hypT:"Гіпотези проти даних",hypCols:["Гіпотеза","Що показують дані PISA"],
+hyp:[["Понад 3 години розваг на день пов’язані з нижчими балами.","Підтверджується, але межа нижча: бал знижується вже після 1 години (492 → бл. 483 при 1–2 год → бл. 468 при 2–3 год → бл. 451 при 3–5 год)."],
+["Помірне навчальне використання (1–2 год) пов’язане з вищими балами.","Підтверджується частково: до 1 години дає +25 пунктів проти відсутності (481 проти 456), але 1–2 год не краще за інші категорії до 5 годин (бл. 476–479)."],
+["Після 2–3 годин навчального використання результат виходить на плато або знижується.","Частково: плато тримається до 5 годин (бл. 477), а помітне зниження починається з 5–7 годин (бл. 465)."]],
+theoryT:"Теоретична рамка",
+theory:[["Теорія когнітивного навантаження (Sweller, 1988)","Робоча пам’ять обмежена. Сповіщення, перемикання між вкладками й соцмережами на уроці створюють зайве навантаження і заважають глибоко опрацьовувати матеріал. Це можливе пояснення, а не те, що вимірює PISA."],
+["Цифрова нерівність другого рівня (Hargittai, 2002)","Різниця в успішності залежить не лише від того, чи є пристрій, а від того, як ним користуються: як інструментом навчання чи для пасивного споживання розваг."],
+["Гіпотеза Златовласки (Przybylski & Weinstein, 2017)","Помірне використання не шкодить і навіть пов’язане з вищими балами, а проблемою є надмірне. Саме таку форму кривої бачить OECD у PISA 2022."]],
+rulesT:"Цифрова гігієна: практичні правила",
+rules:[["Без сповіщень на уроках","Вимкніть звук або увімкніть режим фокусу. Навіть одне сповіщення може збити концентрацію. PISA 2022 пов’язує обмеження пристроїв у школі з меншими відволіканнями."],
+["Зміна фокуса","Спробуйте замінити 30–60 хвилин пасивного гортання соцмереж інтерактивними навчальними ресурсами, тренажерами або читанням. Це порада, а не доведений ефект."],
+["Мікропаузи для очей (20-20-20)","Кожні 20 хвилин роботи за екраном дивіться на об’єкт за 6 метрів (20 футів) протягом 20 секунд. Це поширена рекомендація для комфорту очей, її вплив на успішність не вимірювався."]],
+comboZone:"Ваш режим у зоні найвищих середніх балів і для навчання, і для розваг. Групи учнів з такими звичками мали в середньому найвищі результати з математики. Це не прогноз вашої оцінки.",
+comboNo:"Принаймні один показник поза зоною найвищих середніх балів. Подивіться підказки нижче й правила цифрової гігієни.",comboT:"Загальний підсумок",
 cat:["не користуюсь","до 1 год","1–2 год","2–3 год","3–5 год","5–7 год","понад 7 год"],
 catShort:["0","≤1","1–2","2–3","3–5","5–7",">7"],
 zone:"У зоні найвищих середніх балів",none:"Нижче піку",high:"Вище зони",
@@ -32,6 +46,20 @@ about:"Data: OECD (2023), PISA 2022 Results (Volume II), chapter 5, Figure II.5.
 aboutT:"About the data",limT:"Limitations",
 lim:["This is a correlation, not a cause: we do not know if devices affect scores, the reverse, or if shared factors explain both.","Data cover use at school only. Use at home is not shown.","Self-reported: students estimated their own time.","The OECD average does not describe every country or every student.","The balance zone is indicative; its edges depend on the chosen tolerance (5 points)."],
 src:"Source: https://doi.org/10.1787/a97db61c-en",
+hypT:"Hypotheses vs data",hypCols:["Hypothesis","What the PISA data show"],
+hyp:[["More than 3 hours of leisure per day is linked to lower scores.","Supported, but the threshold is lower: scores fall already after 1 hour (492 → approx. 483 at 1–2 h → approx. 468 at 2–3 h → approx. 451 at 3–5 h)."],
+["Moderate learning use (1–2 h) is linked to higher scores.","Partly supported: up to 1 hour gives +25 points vs none (481 vs 456), but 1–2 h is not better than other categories up to 5 hours (approx. 476–479)."],
+["After 2–3 hours of learning use, results plateau or decline.","Partly: the plateau lasts up to 5 hours (approx. 477), and a clear drop starts at 5–7 hours (approx. 465)."]],
+theoryT:"Theoretical framework",
+theory:[["Cognitive load theory (Sweller, 1988)","Working memory is limited. Notifications and switching between tabs and social media in class add extraneous load and prevent deep processing of material. This is a possible explanation, not what PISA measures."],
+["Second-level digital divide (Hargittai, 2002)","Differences in outcomes depend not only on having a device but on how it is used: as a tool for learning or for passive consumption of entertainment."],
+["Goldilocks hypothesis (Przybylski & Weinstein, 2017)","Moderate use is not harmful and is even associated with higher scores, while overuse is the problem. This is the curve shape OECD sees in PISA 2022."]],
+rulesT:"Digital hygiene: practical rules",
+rules:[["No notifications in class","Mute the sound or switch to focus mode. Even one notification can break concentration. PISA 2022 links limits on devices at school to less distraction."],
+["Shift your focus","Try replacing 30–60 minutes of passive social media scrolling with interactive learning resources, practice tools or reading. This is a suggestion, not a proven effect."],
+["Micro-breaks for the eyes (20-20-20)","Every 20 minutes of screen work, look at something 6 metres (20 feet) away for 20 seconds. A common recommendation for eye comfort; its effect on results has not been measured."]],
+comboZone:"Your pattern is in the highest-average-score zone for both learning and leisure. Groups of students with such habits had the highest average maths results. This is not a forecast of your grade.",
+comboNo:"At least one of your values is outside the highest-average-score zone. See the hints below and the digital hygiene rules.",comboT:"Overall summary",
 cat:["none","up to 1 h","1–2 h","2–3 h","3–5 h","5–7 h","over 7 h"],
 catShort:["0","≤1","1–2","2–3","3–5","5–7",">7"],
 zone:"In the highest-score zone",none:"Below the peak",high:"Above the zone",
@@ -98,17 +126,29 @@ function result(p,box,chBox,color){
   box.appendChild(el("p",{class:"msg"},T[lang].m[key]));
   chBox.textContent="";chBox.appendChild(chart(rows,color,idx));
 }
+function combined(){
+  var zl=zoneOf(R.learning)[catIndex(st.learning)],ze=zoneOf(R.leisure)[catIndex(st.leisure)];
+  var box=$("combo");box.textContent="";var ok=zl&&ze;
+  box.appendChild(el("div",{class:"badge "+(ok?"ok":"mid")},T[lang].comboT));
+  box.appendChild(el("p",{class:"msg"},ok?T[lang].comboZone:T[lang].comboNo));
+}
+function lists(){
+  var t=T[lang],h=$("hyp");h.textContent="";
+  var tb=el("table",{class:"tbl"});var hr=el("tr");t.hypCols.forEach(function(c){hr.appendChild(el("th",{},c))});tb.appendChild(hr);
+  t.hyp.forEach(function(r,i){var tr=el("tr");tr.appendChild(el("td",{},"H"+(i+1)+". "+r[0]));tr.appendChild(el("td",{},r[1]));tb.appendChild(tr)});h.appendChild(tb);
+  [["theory","theory"],["rules","rules"]].forEach(function(p){var box=$(p[0]);box.textContent="";t[p[1]].forEach(function(x,i){var c=el("div",{class:"card sub"});c.appendChild(el("strong",{},(p[1]==="rules"?(i+1)+". ":"")+x[0]));c.appendChild(el("p",{class:"msg"},x[1]));box.appendChild(c)})});
+}
 function update(){
   $("val-learning").textContent=fmtH(st.learning)+" "+T[lang].h;$("val-leisure").textContent=fmtH(st.leisure)+" "+T[lang].h;
   if(!R.learning.length||!R.leisure.length){$("res-learn").textContent="No data in data.js";return}
-  result("learning",$("res-learn"),$("ch-learn"),"var(--learn)");result("leisure",$("res-leis"),$("ch-leis"),"var(--leis)");
+  result("learning",$("res-learn"),$("ch-learn"),"var(--learn)");result("leisure",$("res-leis"),$("ch-leis"),"var(--leis)");combined();
 }
 function texts(){
   var t=T[lang];document.documentElement.lang=lang;document.title=t.title;
   $("t-title").textContent=t.title;$("t-lead").textContent=t.lead;$("t-calc").textContent=t.calc;$("t-avg").textContent=t.avg;
   $("t-res").textContent=t.res;$("t-legend").textContent=t.legend;$("t-disc").textContent=t.disc;$("t-about").textContent=t.aboutT;$("about").textContent=t.about;
   $("t-lim").textContent=t.limT;var ul=$("lim");ul.textContent="";t.lim.forEach(function(x){ul.appendChild(el("li",{},x))});$("t-src").textContent=t.src;
-  $("lang").textContent=lang==="uk"?"EN":"UA";
+  $("lang").textContent=lang==="uk"?"EN":"UA";$("t-hyp").textContent=t.hypT;$("t-theory").textContent=t.theoryT;$("t-rules").textContent=t.rulesT;lists();
 }
 $("lang").onclick=function(){lang=lang==="uk"?"en":"uk";texts();buildInputs();update()};
 texts();buildInputs();update();
