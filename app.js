@@ -182,7 +182,7 @@ function quiz(){
 }
 function update(){
   $("val-learning").textContent=fmtH(st.learning)+" "+T[lang].h;$("val-leisure").textContent=fmtH(st.leisure)+" "+T[lang].h;
-  if(!R.learning.length||!R.leisure.length){$("res-learn").textContent="No data in data.js";return}
+  if(!R.learning.length||!R.leisure.length){var why=window.SCREEN_DATA===undefined?"data.js не завантажився. Перевірте, що файл data.js лежить у корені репозиторію разом з index.html, і оновіть сторінку (Ctrl+F5). / data.js did not load. Check that data.js is in the repository root next to index.html, then refresh (Ctrl+F5).":"У data.js немає рядків з place \"school\" і purpose \"learning\"/\"leisure\". / data.js has no rows with place \"school\" and purpose \"learning\"/\"leisure\".";$("res-learn").textContent=why;$("res-leis").textContent="";$("combo").textContent="";return}
   result("learning",$("res-learn"),$("ch-learn"),"var(--learn)");result("leisure",$("res-leis"),$("ch-leis"),"var(--leis)");combined();
 }
 function texts(){
